@@ -25,12 +25,24 @@ body{
 }
 .suma{
     display: none;
+    
+}
+.texto-logo{
+    color: var(--color-blue-900);
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    
 }
 .logo-img{
     width: 6em;
 }
+.cabecalho-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
 
-
+}
 .cabecalho-botao{
     border: none;
     background:var(--color-bg);
@@ -41,7 +53,7 @@ body{
     top: -1000%;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
     background: var(--color-blue-50);
     transition: top 1s ease-in-out ;
     z-index: 1;
@@ -56,7 +68,7 @@ body{
    
 }
 .logo-img-nav{
-    width: 7em;
+    width: 10em;
 }
 
 
@@ -73,7 +85,7 @@ body{
 
 .menu-lista-itens{
     box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 1em;
+    padding: 0.8em;
     border-radius: 1.3em;
     background-color: var(--color-blue-500);
     font-size: 1.1rem;
@@ -150,9 +162,7 @@ body{
     gap: 1.3em;
 
 }
-.content-titulo{
-    margin-bottom: 10%;
-}
+
 .content-titulo h6 {
     color: var(--color-blue-500);
     text-align: center;
@@ -353,4 +363,95 @@ body{
     text-align: center;
 }
 
+@media (min-width:400px){
 
+    .titulo{
+        font-size: 2.3rem;
+    }
+    
+    .escolha-titulo{
+        font-size: 1.7rem;
+    }
+    
+    .content-titulo h6 {
+        font-size: 1.2rem;
+    }
+    
+    .subtitulo{
+        font-size: 1.3rem;
+    }
+
+    .paragrafos{
+        font-size: 1.2rem;
+    }
+    
+    .suma{
+        display: block;
+    }    
+
+    .footer-contato{
+        padding: 0.5em;
+    }
+}
+
+@media (min-width:483px){
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:515px){
+
+    .titulo{
+        font-size: 2.7rem;
+    }
+
+    .content-titulo h6 {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo{
+        font-size: 1.5rem;
+    }
+
+    .paragrafos{
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width:558px){
+
+    .titulo{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+
+
+    }
+
+    .card-img {
+        width: 13em;
+        height: 10em;
+    }
+    
+    .card5{
+        grid-column: span 2;   
+    }
+
+   
+    .card{
+       
+        align-items: center;
+    
+    }
+
+
+}
