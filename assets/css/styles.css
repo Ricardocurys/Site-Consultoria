@@ -45,7 +45,7 @@ body{
     background: var(--color-blue-50);
     transition: top 1s ease-in-out ;
     z-index: 1;
-    padding:1.2em;
+    padding: 0 1.2em 1.2em 0;
     text-align: center;
     
 }
